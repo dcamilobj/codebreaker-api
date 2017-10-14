@@ -18,10 +18,12 @@ app.get('/guess/:secret', function(req,res )
 {
   number = req.params.secret
   res.send({
-    response: CodeBreaker.guess(number)
+    result: CodeBreaker.guess(number)
   })
 });
 
 app.listen(app.get('port'), function(){
   console.log("NodeJs app listen on port", app.get('port'));
 })
+
+module.exports = app;
