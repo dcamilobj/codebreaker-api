@@ -1,2 +1,2 @@
 
-# codebreaker-api(node.js) with continue integration
+# codebreaker-api(node.js) with continuous integration
