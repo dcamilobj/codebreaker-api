@@ -13,7 +13,6 @@ app.get('/setsecret/:secret', function(req,res )
   })
 });
 
-
 app.get('/guess/:secret', function(req,res )
 {
   number = req.params.secret
@@ -21,9 +20,5 @@ app.get('/guess/:secret', function(req,res )
     result: CodeBreaker.guess(number)
   })
 });
-
-app.listen(app.get('port'), function(){
-  console.log("NodeJs app listen on port", app.get('port'));
-})
 
 module.exports = app;
